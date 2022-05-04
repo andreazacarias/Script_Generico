@@ -32,3 +32,5 @@ df.to_csv('nombre archivo.csv', sep=';')
 ## Pickle
 import Storage as ST
 ST.guardarpickle(nombre archivo,df) # Se deja el nombre del archivo sin punto
+
+# agregar ...

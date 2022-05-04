@@ -16,3 +16,19 @@ from scipy import stats
 from datetime import date # paquete para manejar formatos fecha
 
 # Ingesta de Datos
+## Excels 
+df = pd.read_excel('nombre.xlsx').clean_names() #para subir excels
+## Csv
+df = pd.read_csv('nombre.xlsx', sep=';').clean_names() # Los archivos csv siempre los separamos en ;
+## Pickle
+import Storage as ST
+ST.cargarpickle('ISTAS_pickle')
+
+# Guardar datos
+## Excel 
+df.to_excel('nombre archivo.xlsx')
+## Csv
+df.to_csv('nombre archivo.csv', sep=';')
+## Pickle
+import Storage as ST
+ST.guardarpickle(df,nombre archivo) # Se deja el nombre del archivo sin punto
